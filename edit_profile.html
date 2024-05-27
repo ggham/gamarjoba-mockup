@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Mockup - Profile</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+
+    .mobile {
+      position: relative;
+      width: 360px;
+      height: 640px;
+      border: 16px black solid;
+      border-top: 60px black solid;
+      border-bottom: 60px black solid;
+      border-radius: 36px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .screen {
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Adjusted to push Update Profile button to bottom */
+    }
+
+    .profile-pic {
+      width:  120px;
+      height: 120px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      margin: 0 auto; /* Center the profile pic */
+    }
+
+    .upload-text {
+      font-size: 12px;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    .input-nickname {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 0 10px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+
+    .horizontal-list {
+      width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+      margin-bottom: 20px;
+    }
+
+    .story-placeholder {
+      width: 80px;
+      height: 80px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .update-button {
+      width: 100%;
+      height: 50px;
+      background-color: #007bff;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      font-size: 18px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+    }
+
+    /* Homepage button styles */
+    .home-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 40px; /* Adjust the size of the icon */
+      opacity: 0.5; /* Adjust the opacity of the icon */
+    }
+
+    /* Collapsed navbar */
+    .collapsed-navbar {
+      width: 60px;
+      height: 60px; /* Adjusted height to match the collapsed navbar icon */
+      background-color: #f8f9fa;
+      box-sizing: border-box;
+      padding: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2; /* Ensure the collapsed navbar appears in front */
+    }
+
+    /* Title and back button */
+    .top-bar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .back-button {
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      margin-left: 30px; /* Adjusted margin to create space */
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* Set range button styles */
+    .range-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .range-label {
+      width: 50%;
+      height: 50px;
+      background-color: #007bff;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      font-size: 15px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .range-input {
+      width: 100px;
+    }
+    .range-value {
+    	font-size: 25px
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile">
+    <div class="collapsed-navbar">
+      <!-- Insert collapsed navbar content here -->
+      <img src="https://img.icons8.com/metro/26/000000/menu.png" alt="Menu">
+    </div>
+    <div class="screen">
+      <div class="top-bar">
+        <button class="back-button">&#60;</button>
+        <div class="title">Edit Profile</div>
+      </div>
+      <div class="profile-pic">
+        <span style="text-align: center;">Upload Profile Pic</span>
+      </div>
+      <input type="text" class="input-nickname" placeholder="Nickname">
+      <div class="range-container">
+        <button class="range-label">Update Range</button>
+        <!-- <input type="range" class="range-input" min="0" max="100" value="50"> -->
+        <span>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</span>
+
+        <span class="range-value">100 m</span>
+      </div>
+      <div class="horizontal-list">
+        <div class="story-placeholder"><span>Upload</span><br><span>story</span></div>
+        <div class="story-placeholder"><span>Upload</span><br><span>story</span></div>
+        <div class="story-placeholder"><span>Upload</span><br><span>story</span></div>
+        <div class="story-placeholder"><span>Upload</span><br><span>story</span></div>
+        <div class="story-placeholder"><span>Upload</span><br><span>story</span></div>
+      </div>
+      <a href="#" class="update-button">Update Profile</a>
+    </div>
+  </div>
+</body>
+</html>

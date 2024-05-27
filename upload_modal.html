@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Page</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="popup">
+      <button class="button" onclick="browseClicked()">Browse</button>
+      <button class="button" onclick="cameraClicked()">Use Camera</button>
+    </div>
+  </div>
+
+  <script>
+    function browseClicked() {
+      // Action when Browse button is clicked
+      alert("Browse button clicked!");
+    }
+
+    function cameraClicked() {
+      // Action when Use Camera button is clicked
+      alert("Use Camera button clicked!");
+    }
+  </script>
+</body>
+</html>

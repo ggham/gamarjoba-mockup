@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Mockup - Chat</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+
+    .mobile {
+      width: 360px;
+      height: 640px;
+      border: 16px black solid;
+      border-top: 60px black solid;
+      border-bottom: 60px black solid;
+      border-radius: 36px;
+      position: relative;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .screen {
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .back-button {
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .nickname {
+      font-size: 18px;
+      margin-right: auto;
+    }
+
+    .blurred-nickname {
+      font-size: 18px;
+      color: transparent; /* Make text transparent */
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Apply text shadow to create a blurred effect */
+    }
+
+
+    .chat {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .message-me {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 10px;
+      align-self: flex-start;
+      max-width: 70%; /* Limit message width */
+      margin-bottom: 10px;
+    }
+
+    .message-other {
+      background-color: #f0f0f0;
+      color: black;
+      padding: 10px 15px;
+      border-radius: 10px;
+      align-self: flex-start;
+      max-width: 70%; /* Limit message width */
+      margin-bottom: 10px;
+    }
+
+    .input-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .chat-input {
+      flex: 1;
+      height: 40px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 0 10px;
+      margin-right: 10px;
+    }
+
+    .send-button {
+      width: 80px;
+      height: 40px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile">
+    <div class="screen">
+      <div class="top-bar">
+        <button class="back-button">&#60;</button>
+        <img src="https://cdn-icons-png.flaticon.com/128/11498/11498793.png" alt="Avatar" class="avatar">
+        <div class="nickname blurred-nickname">Supermodel Fan</div>
+      </div>
+      <div class="chat">
+        <div class="message-me">gamarjoba</div>
+      </div>
+      <div class="input-container">
+        <input type="text" class="chat-input" placeholder="Type your message..." disabled>
+        <button class="send-button" disabled>Send</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

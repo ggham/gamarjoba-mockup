@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+
+    .mobile {
+      width: 360px;
+      height: 640px;
+      border: 16px black solid;
+      border-top: 60px black solid;
+      border-bottom: 60px black solid;
+      border-radius: 36px;
+      position: relative;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .screen {
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .back-button {
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      margin-left: 30px; /* Adjusted margin to create space */
+    }
+
+    .back-button img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .collapsed-navbar {
+      width: 60px;
+      height: 60px; /* Adjusted height to match the collapsed navbar icon */
+      background-color: #f8f9fa;
+      box-sizing: border-box;
+      padding: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0; /* Ensure the collapsed navbar appears behind the back button */
+    }
+
+    .image-list {
+      flex: 1;
+      overflow-y: auto; /* Enable scrolling if content exceeds screen height */
+      /* Hide scrollbar */
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* Internet Explorer and Edge */
+    }
+
+    .image-list::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera */
+    }
+
+    .image-item {
+      display: flex;
+      align-items: center;
+      position: relative; /* Added position relative */
+      margin-bottom: 20px;
+    }
+
+    .profile-picture {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .blurred-nickname {
+      flex: 1;
+      font-size: 18px;
+    }
+
+    .overlay-button {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .overlay-button img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .overlay-button[disabled] {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile">
+    <div class="collapsed-navbar">
+      <!-- Insert collapsed navbar content here -->
+      <img src="https://img.icons8.com/metro/26/000000/menu.png" alt="Menu">
+    </div>
+    <div class="screen">
+      <div class="top-bar">
+        <button class="back-button">&#60;</button>
+        <div class="title">Contacts</div>
+      </div>
+      <div class="image-list">
+        <!-- List of images -->
+        <div class="image-item">
+          <img src="https://cdn-icons-png.flaticon.com/128/11498/11498793.png" alt="Supermodel" class="profile-picture">
+          <div class="blurred-nickname">Tekle</div>
+          <div class="overlay-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/1843/1843344.png" alt="Trashcan">
+          </div>
+        </div>
+
+        <div class="image-item">
+          <img src="https://cdn-icons-png.flaticon.com/128/11498/11498793.png" alt="Supermodel" class="profile-picture">
+          <div class="blurred-nickname">Tekle2</div>
+          <div class="overlay-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/1843/1843344.png" alt="Trashcan">
+          </div>
+        </div>
+        <div class="image-item">
+          <img src="https://cdn-icons-png.flaticon.com/128/11498/11498793.png" alt="Supermodel" class="profile-picture">
+          <div class="blurred-nickname">Tekle3</div>
+          <div class="overlay-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/1843/1843344.png" alt="Trashcan">
+          </div>
+        </div>
+        <div class="image-item">
+          <img src="https://cdn-icons-png.flaticon.com/128/11498/11498793.png" alt="Supermodel" class="profile-picture">
+          <div class="blurred-nickname">Tekle4</div>
+          <div class="overlay-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/1843/1843344.png" alt="Trashcan">
+          </div>
+        </div>
+        <div class="image-item">
+          <img src="https://cdn-icons-png.flaticon.com/128/11498/11498793.png" alt="Supermodel" class="profile-picture">
+          <div class="blurred-nickname">Tekle5</div>
+          <div class="overlay-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/1843/1843344.png" alt="Trashcan">
+          </div>
+        </div>
+        <div class="image-item">
+          <img src="https://cdn-icons-png.flaticon.com/128/11498/11498793.png" alt="Supermodel" class="profile-picture">
+          <div class="blurred-nickname">Tekle6</div>
+          <div class="overlay-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/1843/1843344.png" alt="Trashcan">
+          </div>
+        </div>
+        <div class="image-item">
+          <img src="https://cdn-icons-png.flaticon.com/128/11498/11498793.png" alt="Supermodel" class="profile-picture">
+          <div class="blurred-nickname">Tekle7</div>
+          <div class="overlay-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/1843/1843344.png" alt="Trashcan">
+          </div>
+        </div>
+        <div class="image-item">
+          <img src="https://cdn-icons-png.flaticon.com/128/11498/11498793.png" alt="Supermodel" class="profile-picture">
+          <div class="blurred-nickname">Tekle8</div>
+          <div class="overlay-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/1843/1843344.png" alt="Trashcan">
+          </div>
+        </div>
+        <!-- Add more image-items as needed -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

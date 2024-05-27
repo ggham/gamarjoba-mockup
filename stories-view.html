@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Mockup - Stories View</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+
+    .mobile {
+      width: 360px;
+      height: 640px;
+      border: 16px black solid;
+      border-top: 60px black solid;
+      border-bottom: 60px black solid;
+      border-radius: 36px;
+      position: relative;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .screen {
+      width: 100%; /* Set width to full */
+      height: 100%; /* Set height to full */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center content vertically */
+      align-items: center; /* Center content horizontally */
+      position: relative;
+    }
+
+    .story-window {
+      width: 100%; /* Set width to 100% of the screen */
+      height: calc(100% - 60px); /* Set height to 100% of the screen minus space for progress dots */
+      background-color: #ccc; /* Placeholder background color for the story window */
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .progress-bar {
+      width: 100%; /* Set width to 100% of the screen */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .progress-dot {
+      width: 20px;
+      height: 20px;
+      background-color: #ccc; /* Placeholder color for progress dots */
+      border-radius: 50%;
+      margin: 0 5px; /* Added margin for spacing between progress dots */
+    }
+
+    .highlighted {
+      background-color: #007bff; /* Highlighted color for the current story */
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile">
+    <div class="screen">
+      <div class="story-window">
+        <!-- Placeholder for story content -->
+      </div>
+      <div class="progress-bar">
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot highlighted"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
